@@ -61,3 +61,11 @@ CREATE TABLE usuario (
   data_cadastro       timestamp
 );
 
+CREATE TABLE jornalista(
+  id_jornalista SERIAL PRIMARY KEY,
+  fk_usuario                 varchar(255) not null,
+  registro_profissional      varchar(255) null,
+  biografia                  character varying(255),
+  especialidade              varchar(255) null
+);
+
