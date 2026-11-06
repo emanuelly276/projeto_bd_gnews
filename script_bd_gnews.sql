@@ -69,3 +69,12 @@ CREATE TABLE jornalista(
   especialidade              varchar(255) null
 );
 
+CREATE TABLE comentario(
+  id_noticia SERIAL PRIMARY KEY,
+  registro_profissional   varchar(255) not null,
+  biografia               varchar(255) null,
+  entrevista              character varying(255),
+  especialidade           varchar(255) null
+  fk_noticia              int
+);
+
