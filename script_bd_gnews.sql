@@ -1,4 +1,4 @@
-CREATE TABLE noticia(
+CREATE TABLE noticia (
   
   id_noticia SERIAL PRIMARY KEY,
   titulo varchar(255),
@@ -14,7 +14,7 @@ CREATE TABLE noticia(
 
 );
 
-CREATE TABLE curtida_reacao(
+CREATE TABLE curtida_reacao (
 
   id_curtida SERIAL PRIMARY KEY,
   id_jornalista int,
@@ -50,4 +50,14 @@ CREATE TABLE midia_noticia (
 SELECT * FROM midia_noticia;
 
 INSERT INTO  midia_noticia(tipo_midia, url_arquivo, legenda, data_upload) VALUES ('Página web', 'www.gnews.com', 'Parque sustentável', '2027-01-01 03:00:34' );
+
+CREATE TABLE usuario (
+  id_usuario serial primary key,
+  nome                varchar(255) not null,
+  email               varchar(255) null,
+  senha_hash          varchar(255),
+  data_nascimento     date,
+  tipo_perfil         varchar(255),
+  data_cadastro       timestamp
+);
 
