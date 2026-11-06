@@ -89,4 +89,7 @@ create table public_categoria(
   slug               varchar(100)
 );
 
+CREATE TABLE noticia_tag(
+  CONSTRAINT fk_noticia FOREIGN KEY (id_noticia) REFERENCES noticia(id_noticia)
+)
 
