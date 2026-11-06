@@ -78,3 +78,7 @@ CREATE TABLE comentario(
   fk_noticia              int
 );
 
+CREATE TABLE tag(
+nome_tag      varchar(50) NOT NULL
+);
+
