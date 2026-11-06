@@ -82,3 +82,11 @@ CREATE TABLE tag(
 nome_tag      varchar(50) NOT NULL
 );
 
+create table public_categoria(
+  id_categoria serial primary key,
+  nome_categoria     varchar(100) null,
+  descricao          varchar(255) null,
+  slug               varchar(100)
+);
+
+
